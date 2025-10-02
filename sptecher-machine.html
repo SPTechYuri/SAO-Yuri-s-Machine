@@ -7,9 +7,23 @@
         <title>Conversor de Bases</title>
         <!-- estilo css -->
         <style>
+       @font-face {
+  font-family: 'SAOUI'; /* Nome da família de fontes */
+  src: url('SAOUI-Regular.otf') format('opentype'); /* Caminho para o arquivo */
+  font-weight: normal;  /* Especifica que este é o peso normal */
+  font-style: normal;
+}
+
+/* Declaração para a fonte SAOUI Bold */
+@font-face {
+  font-family: 'SAOUI'; /* O MESMO nome da família de fontes */
+  src: url('SAOUI-Bold.otf') format('opentype'); /* Caminho para o arquivo */
+  font-weight: bold;    /* Especifica que este é o peso negrito */
+  font-style: normal;
+}
             /* estilo para o corpo da página */
             body {
-                font-family: Arial, sans-serif; /* define a fonte utilizada */
+                font-family:'SAOUI'; /* define a fonte utilizada */
                 background-image: url(Fundo1.jpg); /* define a cor de fundo do corpo da página */
                 background-position: center;  /* Centraliza a imagem */
                 background-repeat: no-repeat; /* Impede a repetição da imagem */
@@ -17,7 +31,7 @@
                 margin: 10px; /* remove margens externas */
                 padding: 100px; /* remove preenchimento externo */
             }
-
+            
             /* estilo para o contêiner principal */
             #container {
                 width: 50%; /* define a largura do contêiner */
@@ -29,14 +43,13 @@
                 background-repeat: no-repeat; /* Impede a repetição da imagem */
                 background-size:contain;       /* Faz a imagem cobrir todo o container */
                 padding: 150px ;
-                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family:'SAOUI' ;
             }
-            
-
             /* estilo para o cabeçalho */
             h1 {
                 color: #1F2A44; /* define a cor do texto do cabeçalho */
-                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family:'SAOUI';
+                font-weight: bold;
             }
 
             /* estilo para a entrada de texto */
@@ -45,6 +58,8 @@
                 font-size: 16px; /* define o tamanho da fonte */
                 border-radius: 5px; /* define o raio das bordas */
                 background-color: #a282d6; /* define a cor interna do input*/
+                font-family: 'SAOUI';
+                font-weight: normal;
                 
             }
 
@@ -56,6 +71,8 @@
                 border-radius: 5px; /* define o raio das bordas */
                 cursor: pointer; /* altera o cursor ao passar por cima */
                 background-color: rgb(127, 197, 255); /* define a cor interna do bptão*/
+                font-family: 'SAOUI';
+                font-weight: normal;
             }
 
             /* estilo para o botão */
@@ -80,7 +97,8 @@
                 text-align: left; /* alinha o texto à esquerda */
                 align-items:self-start;
                 display: none; /* inicialmente oculta a saída */
-                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family:'SAOUI';
+                font-weight: normal;
                 background-image: url(Resultado.png);
                 background-size: cover; /* Ou 'contain', dependendo do efeito desejado */
                 background-position: center;
@@ -90,6 +108,7 @@
                 min-height: 150px; /* Garante uma altura mínima para a imagem aparecer */
                 color: rgb(0, 38, 255); /* Muda a cor do texto para branco, que geralmente se destaca mais em imagens */
                 text-shadow: 1px 1px 3px rgb(46, 174, 248); /* Adiciona uma sombra ao texto para máxima legibilidade */
+                
             }
 
             #efeito-conversao {
